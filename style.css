@@ -411,6 +411,7 @@ section {
 }
 
 .language__name {
+  color: rgb(85, 85, 85);
   position: absolute;
   bottom: -25px;
   transform: scale(0);
