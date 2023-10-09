@@ -32,6 +32,7 @@ a,
 nav,
 .nav__links {
   display: flex;
+  animation: fade-down 450ms ease-in-out;
 }
 
 nav {
@@ -43,6 +44,17 @@ nav {
 .nav__links {
   gap: 1.75rem;
   font-size: 0.95rem;
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 a {
@@ -157,6 +169,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  animation: animate-dp 850ms 250ms backwards;
 }
 
 .section__pic-container {
@@ -164,6 +177,23 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+.section__pic {
+  border-radius: 50%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes animate-dp {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .section__text {
@@ -259,12 +289,13 @@ section {
 
 .about-containers {
   gap: 2rem;
-  margin: 2rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
 }
 
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+  gap: 1.5rem;
 }
 
 .about-containers,
@@ -272,10 +303,22 @@ section {
   display: flex;
 }
 
+.about-pic {
+  border-radius: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
 .arrow {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+}
+
+.stack-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 }
 
 .details-container {
@@ -297,4 +340,85 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+/* ABOUTTTTTT */
+
+.container1 {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem;
+  padding: 3rem 0;
+}
+
+.about-pic1 {
+  width: 50%;
+}
+.about-pic {
+  width: 100%;
+}
+
+.about-desc {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.box-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.boxAb {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.about-para {
+  text-align: center;
+}
+
+.about-stack {
+  display: flex;
+  gap: 2rem;
+}
+.tech-icon {
+  cursor: pointer;
+  height: 5rem;
+}
+
+.language {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.language:hover .tech-icon {
+  filter: brightness(75%);
+  opacity: 0.86;
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+.language__name {
+  position: absolute;
+  bottom: -25px;
+  transform: scale(0);
+  transition: all 300ms ease;
+  font-size: 16px;
+}
+
+.language:hover .language__name {
+  transform: scale(1);
+  transition: all 300ms ease;
 }
