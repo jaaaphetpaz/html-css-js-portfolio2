@@ -289,13 +289,13 @@ section {
 
 .about-containers {
   gap: 2rem;
-  margin: 1rem 0 1rem 0;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .about-details-container {
   justify-content: center;
   flex-direction: column;
-  gap: 1.5rem;
 }
 
 .about-containers,
@@ -304,21 +304,13 @@ section {
 }
 
 .about-pic {
-  border-radius: 25px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 2rem;
 }
 
 .arrow {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
-}
-
-.stack-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
 }
 
 .details-container {
@@ -342,9 +334,48 @@ section {
   margin: auto 0;
 }
 
+.about-stack {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.tech-icon {
+  cursor: pointer;
+  height: 5rem;
+}
+
+.language {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.language:hover .tech-icon {
+  filter: brightness(75%);
+  opacity: 0.86;
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+.language__name {
+  color: rgb(85, 85, 85);
+  position: absolute;
+  bottom: -25px;
+  transform: scale(0);
+  transition: all 300ms ease;
+  font-size: 16px;
+}
+
+.language:hover .language__name {
+  transform: scale(1);
+  transition: all 300ms ease;
+}
+
 /* ABOUTTTTTT */
 
-.container1 {
+/* .container1 {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
@@ -391,9 +422,17 @@ section {
   display: flex;
   gap: 2rem;
 }
+
 .tech-icon {
   cursor: pointer;
   height: 5rem;
+}
+
+.stack-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 }
 
 .language {
@@ -422,7 +461,7 @@ section {
 .language:hover .language__name {
   transform: scale(1);
   transition: all 300ms ease;
-}
+} */
 
 /* PROJECTS SECTION */
 
