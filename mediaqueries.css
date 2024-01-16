@@ -7,7 +7,8 @@
     flex-wrap: wrap;
   }
   #contact,
-  #projects {
+  #projects,
+  #about {
     height: fit-content;
   }
 }
@@ -44,6 +45,11 @@
   }
   .about-containers {
     margin-top: 0;
+  }
+  .about-details-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -100,8 +106,17 @@
   }
   .title {
     font-size: 2rem;
+    margin: 1rem;
   }
   .text-container {
     text-align: justify;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+  .email-text {
+    margin-right: 4px;
+  }
+  .project-description {
+    display: none;
   }
 }

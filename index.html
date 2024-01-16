@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Jpz E-Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -13,7 +13,6 @@
       <div>
         <ul class="nav__links">
           <li class="nav__link"><a href="#about">About</a></li>
-          <li class="nav__link"><a href="#experience">Experience</a></li>
           <li class="nav__link"><a href="#projects">Projects</a></li>
           <li class="nav__link"><a href="#contact">Contact</a></li>
         </ul>
@@ -31,9 +30,7 @@
           <li class="nav__link" onclick="toggleMenu()">
             <a href="#about">About</a>
           </li>
-          <li class="nav__link" onclick="toggleMenu()">
-            <a href="#experience">Experience</a>
-          </li>
+
           <li class="nav__link" onclick="toggleMenu()">
             <a href="#projects">Projects</a>
           </li>
@@ -54,7 +51,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/Jpz-RESUME.pdf')"
           >
             Download CV
           </button>
@@ -67,13 +64,13 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="location.href='https://www.linkedin.com/in/japhet-paz-3349a3176/'"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
+            onclick="location.href='https://github.com/jaaaphetpaz'"
           />
         </div>
       </div>
@@ -83,14 +80,26 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
         <div class="about-details-container">
+          <div class="text-container">
+            <p class="about-para">
+              Hi there! I'm
+              <span class="about-span">
+                Japhet, a self-taught frontend developer based in TORONTO,
+                CANADA 📍</span
+              >
+              who loves turning ideas into cool websites. I made this
+              E-portfolio to showcase my skills and what I've learned from hours
+              and hours of hands-on projects. I possess an impressive array of
+              skills in HTML, CSS, JavaScript, React, Tailwind, and Firebase. I
+              excel in developing responsive websites with a smooth user
+              experience, while using industry's best practices in writing
+              clean, reusable code. My ultimate goal is to secure an internship
+              or entry-level position where I can immerse myself in a
+              collaborative environment, learn from experienced professionals,
+              and contribute to meaningful projects.
+            </p>
+          </div>
           <div class="about-containers">
             <div class="details-container">
               <img
@@ -98,8 +107,10 @@
                 alt="Experience icon"
                 class="icon"
               />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <h3>Job Ready</h3>
+              <p>
+                Multiple hands-on projects in <br />Frontend Web Development
+              </p>
             </div>
             <div class="details-container">
               <img
@@ -108,18 +119,8 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <p>Frontend Simplified Bootcamp<br />Self-Taught</p>
             </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
           </div>
           <div class="about-stack">
             <figure class="language">
@@ -142,90 +143,42 @@
               <img class="tech-icon" src="./assets/git-alt.svg" alt="" />
               <span class="language__name">GIT</span>
             </figure>
+            <figure class="language">
+              <img class="tech-icon" src="./assets/tailwind.svg" alt="" />
+              <span class="language__name">TAILWIND</span>
+            </figure>
+            <figure class="language">
+              <img class="tech-icon" src="./assets/firebase.svg" alt="" />
+              <span class="language__name">FIREBASE</span>
+            </figure>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
 
-    <!-- <section id="about">
-      <p class="section__text__p1">Get to know more</p>
-      <h1 class="title">About Me</h1>
-      <div class="container1">
-        <div class="about-pic1">
-          <img class="about-pic" src="./assets/about-pic.jpg" alt="" />
-        </div>
-        <div class="about-desc">
-          <div class="box-container">
-            <div class="box1-experience boxAb">
-              <img src="./assets/experience.png" alt="" class="icon" />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            <div class="box2-education boxAb">
-              <img src="./assets/education.png" alt="" class="icon" />
-              <h3>Education</h3>
-              <p>Self-Taught <br />Frontend Simplified Bootcamp</p>
-            </div>
-          </div>
-          <div class="about-para">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-            incidunt veniam illum sunt molestias esse quae. Maxime iure iste
-            possimus. Tenetur nihil aliquam, recusandae possimus sequi accusamus
-            quis! Commodi, quisquam?
-          </div>
-          <div class="about-stack">
-            <figure class="language">
-              <img class="tech-icon" src="./assets/html5.svg" alt="" />
-              <span class="language__name">HTML</span>
-            </figure>
-            <figure class="language">
-              <img class="tech-icon" src="./assets/css3-alt.svg" alt="" />
-              <span class="language__name">CSS</span>
-            </figure>
-            <figure class="language">
-              <img class="tech-icon" src="./assets/js-square.svg" alt="" />
-              <span class="language__name">JAVASCRIPT</span>
-            </figure>
-            <figure class="language">
-              <img class="tech-icon" src="./assets/react.svg" alt="" />
-              <span class="language__name">REACT</span>
-            </figure>
-            <figure class="language">
-              <img class="tech-icon" src="./assets/git-alt.svg" alt="" />
-              <span class="language__name">GIT</span>
-            </figure>
-          </div>
-        </div>
-      </div>
-
-      <img
-        src="./assets/arrow.png"
-        alt=""
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section> -->
-
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
+      <p class="section__text__p1">Browse My Most Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="./assets/netflix-clone.png"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">JPZ Cloneflix</h2>
+            <h5 class="project-description">
+              HTML | JAVASCRIPT | REACT | TAILWIND CSS | FIREBASE
+            </h5>
+            <p class="project-description">
+              A netflix clone react app that allows you to sign up, log in, and
+              save movies under your account. This app showcases my skills in
+              routing, hooks, and api calls using axios. It is also made using
+              firebase for backend and user authentication.
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -244,12 +197,21 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/library-project.png"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">
+              Library E-Commerce
+            </h2>
+            <h5 class="project-description">HTML | CSS | JAVASCRIPT | REACT</h5>
+            <p class="project-description">
+              A react e-commerce book store app that displays my skills in
+              JAVASCRIPT. It showcases functions such as sorting, mapping, and
+              add to cart features. Creating this app really helped me improve
+              in making reusable components.
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -268,12 +230,24 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
+                src="./assets/nike-landing.png"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">
+              Nike Landing Page
+            </h2>
+            <h5 class="project-description">
+              HTML | JAVASCRIPT | REACT | TAILWIND CSS
+            </h5>
+            <p class="project-description">
+              Basic footwear brand landing page to practice TAILWIND CSS. Fully
+              responsive, made with reusable styles/classes, components, layout,
+              and flexbox. This landing page also helped me practice my REACT
+              and JAVASCRIPT skills in terms of mapping and importing
+              components.
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -303,7 +277,9 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p class="email-text">
+            <a href="mailto:examplemail@gmail.com">japhet.paz@outlook.com</a>
+          </p>
         </div>
         <div class="contact-info-container">
           <img
@@ -311,7 +287,11 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p>
+            <a href="https://www.linkedin.com/in/japhet-paz-3349a3176/"
+              >LinkedIn</a
+            >
+          </p>
         </div>
       </div>
     </section>
@@ -321,7 +301,6 @@
         <div class="nav-links-container">
           <ul class="nav__links">
             <li class="nav__link"><a href="#about">About</a></li>
-            <li class="nav__link"><a href="#experience">Experience</a></li>
             <li class="nav__link"><a href="#projects">Projects</a></li>
             <li class="nav__link"><a href="#contact">Contact</a></li>
           </ul>
